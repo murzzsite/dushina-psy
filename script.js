@@ -202,7 +202,7 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/DD5A5A4S5W'
       const r = $('.stop__dot', s).getBoundingClientRect();
       return { x: r.left - wr.left + r.width / 2, y: r.top - wr.top + r.height / 2 };
     });
-    const amp = pw.clientWidth > 900 ? 130 : 22;
+    const amp = pw.clientWidth > 900 ? 64 : 18;
     let d = 'M' + pathPts[0].x + ' ' + pathPts[0].y;
     for (let i = 0; i < pathPts.length - 1; i++) {
       const a = pathPts[i], b = pathPts[i + 1], dy = b.y - a.y;
